@@ -14,17 +14,29 @@ public class LegoSet {
     @Id
     @Column(name = "name", unique = true)
     private String name;
+    @Column(name = "year")
     private Integer year;
+    @Column(name = "theme")
     private String theme;
+    @Column(name = "subtheme")
     private String subtheme;
+    @Column(name = "theme_group")
     private String themeGroup;
+    @Column(name = "category")
     private String category;
+    @Column(name = "pieces")
     private Integer pieces;
+    @Column(name = "minifigs")
     private Integer minifigs;
+    @Column(name = "agerange_min")
     private Integer ageRangeMin;
+    @Column(name = "us_retailprice")
     private Float usRetailPrice;
+    @Column(name = "brickset_url")
     private String bricksetUrl;
+    @Column(name = "thumbnail_url")
     private String thumbnailUrl;
+    @Column(name = "image_url")
     private String imageUrl;
 
     public LegoSet(String setId, String name, Integer year, String theme, String subtheme, String themeGroup, String category, Integer pieces, Integer minifigs, Integer ageRangeMin, Float usRetailPrice, String bricksetUrl, String thumbnailUrl, String imageUrl) {
