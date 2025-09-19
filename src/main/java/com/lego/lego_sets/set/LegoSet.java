@@ -28,9 +28,9 @@ public class LegoSet {
     private Integer pieces;
     @Column(name = "minifigs")
     private Integer minifigs;
-    @Column(name = "agerange_min")
+    @Column(name = "age_range_min")
     private Integer ageRangeMin;
-    @Column(name = "us_retailprice")
+    @Column(name = "us_retail_price")
     private Float usRetailPrice;
     @Column(name = "brickset_url")
     private String bricksetUrl;
