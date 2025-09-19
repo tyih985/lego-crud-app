@@ -8,7 +8,7 @@ import java.util.Optional;
 
 // CRUD
 @Repository
-public interface SetRespository extends JpaRepository<LegoSet, String> {
+public interface SetRepository extends JpaRepository<LegoSet, String> {
     void deleteByName(String name);
 
     Optional<LegoSet> findByName(String name);
